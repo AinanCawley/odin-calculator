@@ -9,7 +9,6 @@
 
     font-family: monospace;
     font-size: xx-large;
-    text-align: center;
 }
 
 #centre
@@ -61,4 +60,11 @@
 .invisible
 {
     display: none; /* So that the empty buttons don't display their textcontent of "H" */
+}
+
+.calculatorButton
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
