@@ -10,26 +10,37 @@
 
 
 
-#center
+#centre
 {
-    display: flex;  
+    display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    height: 100vh;
 }
 
 #calculatorContainer
 {
+    flex-basis: 400px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
+}
+
+#calculatorDisplay
+{  
+   flex-basis: 20vh; 
+   flex-grow: 1;
+   flex-shrink: 1;
 }
 
 #calculatorButtons
 {
     display: flex;
-    height: 400px;
-    width: 250px;
     justify-content: stretch;
     align-items: stretch;
+    flex-basis: 60vh;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .buttonColumn
