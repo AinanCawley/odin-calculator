@@ -2,5 +2,45 @@
 {
     margin: 0px;
     padding: 0px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
 
+
+
+#center
+{
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+
+#calculatorContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#calculatorButtons
+{
+    display: flex;
+    height: 400px;
+    width: 250px;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.buttonColumn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.buttonColumn, .calculatorButton
+{
+    flex-grow: 1;
+}

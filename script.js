@@ -34,10 +34,12 @@ let buttonFragment = new DocumentFragment();
 for( let i = 0; i < 5; i++ )
 {
     let buttonColumn = document.createElement("div");
+    buttonColumn.setAttribute("class", "buttonColumn");
 
     for( let j = 0; j < 4; j++ )
     {
         let button = document.createElement("div");
+        button.setAttribute("class", "calculatorButton");
         button.id = i + "x" + j;
         buttonColumn.appendChild(button);
     };
