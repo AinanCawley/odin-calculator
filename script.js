@@ -18,3 +18,7 @@ const divide = function( a, b )
     return a / b;
 };
 
+const operate = function( operation, a, b )
+{
+    return operation(a,b);
+};
