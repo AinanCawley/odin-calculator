@@ -12,8 +12,6 @@
     text-align: center;
 }
 
-
-
 #centre
 {
     display: flex;
@@ -58,4 +56,9 @@
 .buttonColumn, .calculatorButton
 {
     flex-grow: 1;
+}
+
+.invisible
+{
+    display: none; /* So that the empty buttons don't display their textcontent of "H" */
 }

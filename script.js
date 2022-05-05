@@ -59,6 +59,10 @@ for( let i = 0; i < 5; i++ )
                 button.id = "1button";
                 button.innerText = "1";
             }
+            if( j==3 )
+            {
+                button.innerText = "\u2800"; //this character isn't supposed to be visible
+            }
         }
         if( i==1 )
         {
@@ -123,13 +127,17 @@ for( let i = 0; i < 5; i++ )
                 button.id = "timesButton";
                 button.innerText = "x";
             }
+            if( j==3 )
+            {
+                button.innerText = "\u2800"; //this character isn't supposed to be visible
+            }
         }
         if( i==4 )
         {
             if( j==0 )
             {
                 button.id = "backspaceButton";
-                button.innerText = "backspace";
+                button.innerText = "\u21b5";
             }
             if( j==1 )
             {
@@ -140,6 +148,10 @@ for( let i = 0; i < 5; i++ )
             {
                 button.id = "divideButton";
                 button.innerText = "/";
+            }
+            if( j==3 )
+            {
+                button.innerText = "\u2800"; //this character isn't supposed to be visible
             }
         }
 
