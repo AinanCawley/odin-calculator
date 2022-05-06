@@ -67,7 +67,7 @@ for( let i = 0; i < 5; i++ )
             }
             if( j==3 )
             {
-                button.innerText = "\u2800"; //this character isn't supposed to be visible
+                button.innerText = "\u200B"; //this character isn't supposed to be visible
             }
         }
         if( i==1 )
@@ -135,7 +135,7 @@ for( let i = 0; i < 5; i++ )
             }
             if( j==3 )
             {
-                button.innerText = "\u2800"; //this character isn't supposed to be visible
+                button.innerText = "\u200B"; //this character isn't supposed to be visible
             }
         }
         if( i==4 )
