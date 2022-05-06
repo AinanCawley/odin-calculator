@@ -312,10 +312,14 @@ for( let i = 0; i < 5; i++ )
                 {
                     if(result!="")
                     {
-                        firstNumber = result;
-                        chosenOperator = "+";
-                        secondNumber = "";
-                        result = "";
+                        if(result!="ERROR")
+                        {
+                            firstNumber = result;
+                            chosenOperator = "+";
+                            secondNumber = "";
+                            result = "";
+                            calculatorDisplayBottom.innerText = "";
+                        }
                     }
                     else
                     {
@@ -325,7 +329,6 @@ for( let i = 0; i < 5; i++ )
                         }
                     }
                     calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
-                    calculatorDisplayBottom.innerText = "";
                 });
             }
             if( j==2 )
@@ -336,10 +339,14 @@ for( let i = 0; i < 5; i++ )
                 {
                     if(result!="")
                     {
-                        firstNumber = result;
-                        chosenOperator = "x";
-                        secondNumber = "";
-                        result = "";
+                        if(result!="ERROR")
+                        {
+                            firstNumber = result;
+                            chosenOperator = "x";
+                            secondNumber = "";
+                            result = "";
+                            calculatorDisplayBottom.innerText = "";
+                        }
                     }
                     else
                     {
@@ -349,7 +356,6 @@ for( let i = 0; i < 5; i++ )
                         }
                     }
                     calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
-                    calculatorDisplayBottom.innerText = "";
                 });
             }
             if( j==3 )
@@ -392,10 +398,14 @@ for( let i = 0; i < 5; i++ )
                 {
                     if(result!="")
                     {
-                        firstNumber = result;
-                        chosenOperator = "-";
-                        secondNumber = "";
-                        result = "";
+                        if(result!="ERROR")
+                        {
+                            firstNumber = result;
+                            chosenOperator = "-";
+                            secondNumber = "";
+                            result = "";
+                            calculatorDisplayBottom.innerText = "";
+                        }
                     }
                     else
                     {
@@ -419,7 +429,6 @@ for( let i = 0; i < 5; i++ )
                         }
                     }
                     calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
-                    calculatorDisplayBottom.innerText = "";
                 });
             }
             if( j==2 )
@@ -430,10 +439,14 @@ for( let i = 0; i < 5; i++ )
                 {
                     if(result!="")
                     {
-                        firstNumber = result;
-                        chosenOperator = "\u00F7";
-                        secondNumber = "";
-                        result = "";
+                        if(result!="ERROR")
+                        {
+                            firstNumber = result;
+                            chosenOperator = "\u00F7";
+                            secondNumber = "";
+                            result = "";
+                            calculatorDisplayBottom.innerText = "";
+                        }
                     }
                     else
                     {
@@ -443,7 +456,6 @@ for( let i = 0; i < 5; i++ )
                         }
                     }
                     calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
-                    calculatorDisplayBottom.innerText = "";
                 });
             }
             if( j==3 )
