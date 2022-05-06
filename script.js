@@ -63,7 +63,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         secondNumber = secondNumber + "7";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==1 )
@@ -80,7 +80,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         secondNumber = secondNumber + "4";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==2 )
@@ -97,7 +97,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         secondNumber = secondNumber + "1";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==3 )
@@ -121,7 +121,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         secondNumber = secondNumber + "8";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==1 )
@@ -138,7 +138,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         secondNumber = secondNumber + "5";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==2 )
@@ -155,7 +155,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         secondNumber = secondNumber + "2";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==3 )
@@ -172,7 +172,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         secondNumber = secondNumber + "0";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
         }
@@ -192,7 +192,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         secondNumber = secondNumber + "9";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==1 )
@@ -209,7 +209,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         secondNumber = secondNumber + "6";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==2 )
@@ -226,7 +226,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         secondNumber = secondNumber + "3";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==3 )
@@ -249,7 +249,7 @@ for( let i = 0; i < 5; i++ )
                             secondNumber = secondNumber + ".";
                         }
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
         }
@@ -270,7 +270,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         chosenOperator = "+";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==2 )
@@ -283,7 +283,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         chosenOperator = "x";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==3 )
@@ -314,7 +314,7 @@ for( let i = 0; i < 5; i++ )
                             secondNumber = secondNumber.slice(0,-1);
                         }
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                     calculatorDisplayBottom.innerText = "";
                 });
             }
@@ -342,7 +342,7 @@ for( let i = 0; i < 5; i++ )
                             }
                         }
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==2 )
@@ -355,7 +355,7 @@ for( let i = 0; i < 5; i++ )
                     {
                         chosenOperator = "\u00F7";
                     }
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                 });
             }
             if( j==3 )
@@ -368,7 +368,7 @@ for( let i = 0; i < 5; i++ )
                     chosenOperator = "";
                     secondNumber = "";
                     result = "";
-                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
                     calculatorDisplayBottom.innerText = result;
                 });
             }
@@ -388,7 +388,7 @@ const calculatorDisplayBottom = document.createElement('div');
 calculatorDisplayTop.classList.add('displayTop');
 calculatorDisplayBottom.classList.add('displayBottom');
 
-calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
 calculatorDisplayBottom.innerText = result;
 
 calculatorDisplay.appendChild(calculatorDisplayTop);
