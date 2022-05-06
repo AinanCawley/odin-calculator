@@ -264,11 +264,27 @@ for( let i = 0; i < 5; i++ )
             {
                 button.id = "plusButton";
                 button.innerText = "+";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        chosenOperator = "+";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==2 )
             {
                 button.id = "timesButton";
                 button.innerText = "x";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        chosenOperator = "x";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==3 )
             {
@@ -286,11 +302,41 @@ for( let i = 0; i < 5; i++ )
             {
                 button.id = "minusButton";
                 button.innerText = "-";
+                button.addEventListener('click', function()
+                {
+                    if(firstNumber=="")
+                    {
+                        firstNumber = "-";
+                    }
+                    else
+                    {
+                        if(chosenOperator=="")
+                        {
+                            chosenOperator = "-";
+                        }
+                        else
+                        {
+                            if(secondNumber.indexOf("-")==-1)
+                            {
+                                secondNumber = "-" + secondNumber;
+                            }
+                        }
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==2 )
             {
                 button.id = "divideButton";
-                button.innerText = "/";
+                button.innerText = "\u00F7";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        chosenOperator = "\u00F7";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==3 )
             {
