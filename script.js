@@ -27,7 +27,6 @@ let firstNumber = "";
 let chosenOperator = "";
 let secondNumber = "";
 let result = "";
-let displayString = "";
 
 //DOM STUFF
 
@@ -54,16 +53,52 @@ for( let i = 0; i < 5; i++ )
             {
                 button.id = "7button";
                 button.innerText = "7";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber + "7";
+                    }
+                    else
+                    {
+                        secondNumber = secondNumber + "7";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==1 )
             {
                 button.id = "4button";
                 button.innerText = "4";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber + "4";
+                    }
+                    else
+                    {
+                        secondNumber = secondNumber + "4";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==2 )
             {
                 button.id = "1button";
                 button.innerText = "1";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber + "1";
+                    }
+                    else
+                    {
+                        secondNumber = secondNumber + "1";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==3 )
             {
@@ -76,21 +111,69 @@ for( let i = 0; i < 5; i++ )
             {
                 button.id = "8button";
                 button.innerText = "8";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber + "8";
+                    }
+                    else
+                    {
+                        secondNumber = secondNumber + "8";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==1 )
             {
                 button.id = "5button";
                 button.innerText = "5";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber + "5";
+                    }
+                    else
+                    {
+                        secondNumber = secondNumber + "5";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==2 )
             {
                 button.id = "2button";
                 button.innerText = "2";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber + "2";
+                    }
+                    else
+                    {
+                        secondNumber = secondNumber + "2";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==3 )
             {
                 button.id = "0button";
                 button.innerText = "0";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber + "0";
+                    }
+                    else
+                    {
+                        secondNumber = secondNumber + "0";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
         }
         if( i==2 )
@@ -99,21 +182,75 @@ for( let i = 0; i < 5; i++ )
             {
                 button.id = "9button";
                 button.innerText = "9";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber + "9";
+                    }
+                    else
+                    {
+                        secondNumber = secondNumber + "9";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==1 )
             {
                 button.id = "6button";
                 button.innerText = "6";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber + "6";
+                    }
+                    else
+                    {
+                        secondNumber = secondNumber + "6";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==2 )
             {
                 button.id = "3button";
                 button.innerText = "3";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber + "3";
+                    }
+                    else
+                    {
+                        secondNumber = secondNumber + "3";
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
             if( j==3 )
             {
                 button.id = "decimalButton";
                 button.innerText = ".";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        if(firstNumber.indexOf(".") == -1)
+                        {
+                            firstNumber = firstNumber + ".";
+                        }
+                    }
+                    else
+                    {
+                        if(secondNumber.indexOf(".") == -1)
+                        {
+                            secondNumber = secondNumber + ".";
+                        }
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                });
             }
         }
         if( i==3 )
