@@ -296,6 +296,15 @@ for( let i = 0; i < 5; i++ )
             {
                 button.id = "clearButton";
                 button.innerText = "C";
+                button.addEventListener('click', function()
+                {
+                    firstNumber = ""; 
+                    chosenOperator = "";
+                    secondNumber = "";
+                    result = "";
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayBottom.innerText = result;
+                });
             }
         }
 
