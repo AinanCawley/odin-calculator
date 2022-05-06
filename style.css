@@ -23,7 +23,7 @@
     flex-shrink: 1;
     padding: 5px;
     border-radius: 10px;
-    background-color: rgb(245, 245, 245);
+    background-color: hsl(0,0%,97%);
 }
 
 #calculatorDisplay
@@ -34,7 +34,7 @@
    display: flex;
    flex-direction: column;
    border-radius: 10px;
-   background-color: rgb(230,230,230);
+   background-color: hsl(0,0%,93%);
    margin: 3px;
    padding: 10px;
 }
@@ -72,7 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(230,230,230);
+    background-color: hsl(0,0%,85%);
     border-radius: 10px;
     margin: 3px;
     user-select: none;
@@ -81,12 +81,12 @@
 
 .calculatorButton:hover
 {
-    background-color: rgb(200,200,200);
+    background-color: hsl(0,0%,80%);
 }
 
 .calculatorButton:active
 {
-    background-color: rgb(150,150,150);
+    background-color: hsl(0,0%,70%);
 }
 
 .displayTop
@@ -100,4 +100,40 @@
     flex-grow: 1;
     align-self: flex-end;
     text-align: end;
+    display: flex;
+    align-items: flex-end;
+}
+
+#emptyButton
+{
+    background-color: rgb(245, 245, 245);
+}
+
+#plusButton, #timesButton, #divideButton, #minusButton
+{
+    background-color: hsl(0,0%,30%);
+    color: hsl(0,0%,93%);
+}
+#plusButton:hover, #timesButton:hover, #divideButton:hover, #minusButton:hover
+{
+    background-color: hsl(0,0%,15%);
+    color: hsl(0,0%,93%);
+}
+#plusButton:active, #timesButton:active, #divideButton:active, #minusButton:active
+{
+    background-color: hsl(0,0%,93%);
+    color: black;
+}
+
+#equalsButton, #backspaceButton, #clearButton
+{
+    background-color: hsl(0,0%,90%);
+}
+#equalsButton:hover, #backspaceButton:hover, #clearButton:hover
+{
+    background-color: hsl(0,0%,85%);
+}
+#equalsButton:active, #backspaceButton:active, #clearButton:active
+{
+    background-color: hsl(0,0%,75%);
 }
