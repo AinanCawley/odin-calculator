@@ -23,6 +23,12 @@ const operate = function( operation, a, b )
     return operation(a,b);
 };
 
+let firstNumber = ""; 
+let chosenOperator = "";
+let secondNumber = "";
+let result = "";
+let displayString = "";
+
 //DOM STUFF
 
 const calculatorContainer = document.getElementById("calculatorContainer");
@@ -152,7 +158,7 @@ for( let i = 0; i < 5; i++ )
             if( j==3 )
             {
                 button.id = "clearButton";
-                button.innerText = "\u21b5\u21b5";
+                button.innerText = "C";
             }
         }
 
@@ -170,8 +176,8 @@ const calculatorDisplayBottom = document.createElement('div');
 calculatorDisplayTop.classList.add('displayTop');
 calculatorDisplayBottom.classList.add('displayBottom');
 
-calculatorDisplayTop.innerText = "3x3"; //TESTING DISPLAY
-calculatorDisplayBottom.innerText = "=9"; //TESTING DISPLAY
+calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+calculatorDisplayBottom.innerText = result;
 
 calculatorDisplay.appendChild(calculatorDisplayTop);
 calculatorDisplay.appendChild(calculatorDisplayBottom);

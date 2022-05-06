@@ -69,6 +69,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(230,230,230);
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.calculatorButton:hover
+{
+    background-color: rgb(200,200,200);
+}
+
+.calculatorButton:active
+{
+    background-color: rgb(150,150,150);
 }
 
 .displayTop
