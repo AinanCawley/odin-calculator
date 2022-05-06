@@ -162,6 +162,16 @@ for( let i = 0; i < 5; i++ )
     buttonFragment.appendChild(buttonColumn);
 };
 
-
-
 calculatorButtons.appendChild(buttonFragment);
+
+const calculatorDisplayTop = document.createElement('div');
+const calculatorDisplayBottom = document.createElement('div');
+
+calculatorDisplayTop.classList.add('displayTop');
+calculatorDisplayBottom.classList.add('displayBottom');
+
+calculatorDisplayTop.innerText = "3x3"; //TESTING DISPLAY
+calculatorDisplayBottom.innerText = "=9"; //TESTING DISPLAY
+
+calculatorDisplay.appendChild(calculatorDisplayTop);
+calculatorDisplay.appendChild(calculatorDisplayBottom);

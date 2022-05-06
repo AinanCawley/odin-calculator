@@ -70,3 +70,15 @@
     align-items: center;
     justify-content: center;
 }
+
+.displayTop
+{
+    flex-grow: 1;
+    align-self: flex-start;
+}
+
+.displayBottom
+{
+    flex-grow: 1;
+    align-self: flex-end;
+}
