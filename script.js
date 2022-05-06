@@ -1,26 +1,54 @@
 const add = function( a, b )
 {
+    a = a * 1;
+    b = b * 1;
     return a + b;
 };
 
 const multiply = function( a, b )
 {
+    a = a * 1;
+    b = b * 1;
     return a * b;
 };
 
 const subtract = function( a, b )
 {
+    a = a * 1;
+    b = b * 1;
     return a - b;
 };
 
 const divide = function( a, b )
 {
+    a = a * 1;
+    b = b * 1;
+
+    if( b==0)
+    {
+        return "ERROR";
+    }
     return a / b;
 };
 
 const operate = function( operation, a, b )
 {
-    return operation(a,b);
+    if( operation == "+" )
+    {
+        return add(a,b);
+    }
+    if( operation == "-" )
+    {
+        return subtract(a,b);
+    }
+    if( operation == "x" )
+    {
+        return multiply(a,b);
+    }
+    if( operation == "\u00F7")
+    {
+        return divide(a,b);
+    }
 };
 
 let firstNumber = ""; 
@@ -259,6 +287,22 @@ for( let i = 0; i < 5; i++ )
             {
                 button.id = "equalsButton";
                 button.innerText = "=";
+                button.addEventListener('click', function()
+                {
+                    if( (firstNumber != "") && (chosenOperator != "") )
+                    {
+                        if( (secondNumber=="") || ((secondNumber=="-") || (secondNumber=="-.")) )
+                        {
+                            //Do nothing as user's input isn't complete
+                        }
+                        else
+                        {
+                            result = operate( chosenOperator, firstNumber, secondNumber );
+                        }
+                    }
+
+                    calculatorDisplayBottom.innerText = "= " + result;
+                });
             }
             if( j==1 )
             {
