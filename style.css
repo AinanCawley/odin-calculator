@@ -106,7 +106,7 @@
 
 #emptyButton
 {
-    background-color: rgb(245, 245, 245);
+    background-color: hsl(0,0%,97%);
 }
 
 #plusButton, #timesButton, #divideButton, #minusButton
