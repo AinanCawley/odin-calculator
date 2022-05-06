@@ -151,7 +151,8 @@ for( let i = 0; i < 5; i++ )
             }
             if( j==3 )
             {
-                button.innerText = "\u2800"; //this character isn't supposed to be visible
+                button.id = "clearButton";
+                button.innerText = "\u21b5\u21b5";
             }
         }
 
