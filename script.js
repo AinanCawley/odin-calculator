@@ -297,6 +297,26 @@ for( let i = 0; i < 5; i++ )
             {
                 button.id = "backspaceButton";
                 button.innerText = "\u21b5";
+                button.addEventListener('click', function()
+                {
+                    if(chosenOperator=="")
+                    {
+                        firstNumber = firstNumber.slice(0,-1);
+                    }
+                    else
+                    {
+                        if(secondNumber=="")
+                        {
+                            chosenOperator = "";
+                        }
+                        else
+                        {
+                            secondNumber = secondNumber.slice(0,-1);
+                        }
+                    }
+                    calculatorDisplayTop.innerText = firstNumber + chosenOperator + secondNumber;
+                    calculatorDisplayBottom.innerText = "";
+                });
             }
             if( j==1 )
             {
