@@ -21,6 +21,9 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
 }
 
 #calculatorDisplay
@@ -96,4 +99,5 @@
 {
     flex-grow: 1;
     align-self: flex-end;
+    text-align: end;
 }
