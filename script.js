@@ -53,7 +53,7 @@ const operate = function( operation, a, b )
 
 const displayRound = function(number)
 {
-    if(number=="")
+    if(number==="")
     {
         return "";
     }
@@ -345,23 +345,30 @@ for( let i = 0; i < 5; i++ )
                     }
                     else
                     {
-                        if(chosenOperator=="")
+                        if( (firstNumber=="") || ( (firstNumber==".") || ((firstNumber=="-") || (firstNumber=="-."))))
                         {
-                            chosenOperator = "+";
+                            //Do nothing as there's no number
                         }
                         else
                         {
-                            if( (secondNumber=="") || ((secondNumber=="-") || (secondNumber=="-.")) )
+                            if(chosenOperator=="")
                             {
-                                //Do nothing as user's input is incomplete
+                                chosenOperator = "+";
                             }
                             else
                             {
-                                firstNumber = operate( chosenOperator, firstNumber, secondNumber );
-                                chosenOperator = "+";
-                                secondNumber = "";
-                                result = "";
-                                calculatorDisplayBottom.innerText = "";
+                                if( (secondNumber=="") || ((secondNumber=="-") || (secondNumber=="-.")) )
+                                {
+                                    //Do nothing as user's input is incomplete
+                                }
+                                else
+                                {
+                                    firstNumber = operate( chosenOperator, firstNumber, secondNumber );
+                                    chosenOperator = "+";
+                                    secondNumber = "";
+                                    result = "";
+                                    calculatorDisplayBottom.innerText = "";
+                                }
                             }
                         }
                     }
@@ -387,24 +394,31 @@ for( let i = 0; i < 5; i++ )
                     }
                     else
                     {
-                        if(chosenOperator=="")
+                        if( (firstNumber=="") || ( (firstNumber==".") || ((firstNumber=="-") || (firstNumber=="-."))))
                         {
-                            chosenOperator = "x";
+                            //Do nothing as there's no number
                         }
                         else
                         {
-                            if( (secondNumber=="") || ((secondNumber=="-") || (secondNumber=="-.")) )
+                            if(chosenOperator=="")
                             {
-                                //Do nothing as user's input is incomplete
+                                chosenOperator = "x";
                             }
                             else
                             {
-                                firstNumber = operate( chosenOperator, firstNumber, secondNumber );
-                                chosenOperator = "x";
-                                secondNumber = "";
-                                result = "";
-                                calculatorDisplayBottom.innerText = "";
-                            }
+                                if( (secondNumber=="") || ((secondNumber=="-") || (secondNumber=="-.")) )
+                                {
+                                    //Do nothing as user's input is incomplete
+                                }
+                                else
+                                {
+                                    firstNumber = operate( chosenOperator, firstNumber, secondNumber );
+                                    chosenOperator = "x";
+                                    secondNumber = "";
+                                    result = "";
+                                    calculatorDisplayBottom.innerText = "";
+                                }
+                            }      
                         }
                     }
                     calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
@@ -469,29 +483,36 @@ for( let i = 0; i < 5; i++ )
                         }
                         else
                         {
-                            if(chosenOperator=="")
+                            if( (firstNumber=="-") || (firstNumber==".") )
                             {
-                                chosenOperator = "-";
+                                //Do nothing as there's no number
                             }
                             else
                             {
-                                if(secondNumber=="")
+                                if(chosenOperator=="")
                                 {
-                                    secondNumber = "-";
+                                    chosenOperator = "-";
                                 }
                                 else
                                 {
-                                    if( (secondNumber=="-") || (secondNumber=="-.") )
+                                    if(secondNumber=="")
                                     {
-                                        //Do nothing as user's input is incomplete
+                                        secondNumber = "-";
                                     }
                                     else
                                     {
-                                        firstNumber = operate( chosenOperator, firstNumber, secondNumber );
-                                        chosenOperator = "-";
-                                        secondNumber = "";
-                                        result = "";
-                                        calculatorDisplayBottom.innerText = "";
+                                        if( (secondNumber=="-") || (secondNumber=="-.") )
+                                        {
+                                            //Do nothing as user's input is incomplete
+                                        }
+                                        else
+                                        {
+                                            firstNumber = operate( chosenOperator, firstNumber, secondNumber );
+                                            chosenOperator = "-";
+                                            secondNumber = "";
+                                            result = "";
+                                            calculatorDisplayBottom.innerText = "";
+                                        }
                                     }
                                 }
                             }
@@ -518,24 +539,31 @@ for( let i = 0; i < 5; i++ )
                         }
                     }
                     else
-                    {
-                        if(chosenOperator=="")
+                    {   
+                        if( (firstNumber=="") || ( (firstNumber==".") || ((firstNumber=="-") || (firstNumber=="-."))))
                         {
-                            chosenOperator = "\u00F7";
+                            //Do nothing as there's no number
                         }
                         else
                         {
-                            if( (secondNumber=="") || ((secondNumber=="-") || (secondNumber=="-.")) )
+                            if(chosenOperator=="")
                             {
-                                //Do nothing as user's input is incomplete
+                                chosenOperator = "\u00F7";
                             }
                             else
                             {
-                                firstNumber = operate( chosenOperator, firstNumber, secondNumber );
-                                chosenOperator = "\u00F7";
-                                secondNumber = "";
-                                result = "";
-                                calculatorDisplayBottom.innerText = "";
+                                if( (secondNumber=="") || ((secondNumber=="-") || (secondNumber=="-.")) )
+                                {
+                                    //Do nothing as user's input is incomplete
+                                }
+                                else
+                                {
+                                    firstNumber = operate( chosenOperator, firstNumber, secondNumber );
+                                    chosenOperator = "\u00F7";
+                                    secondNumber = "";
+                                    result = "";
+                                    calculatorDisplayBottom.innerText = "";
+                                }
                             }
                         }
                     }
