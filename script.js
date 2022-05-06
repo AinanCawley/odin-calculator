@@ -373,6 +373,7 @@ for( let i = 0; i < 5; i++ )
                 {
                     if(chosenOperator=="")
                     {
+                        firstNumber = firstNumber + "";
                         firstNumber = firstNumber.slice(0,-1);
                     }
                     else
