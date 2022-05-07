@@ -452,6 +452,7 @@ for( let i = 0; i < 5; i++ )
                         else
                         {
                             secondNumber = secondNumber.slice(0,-1);
+                            result = "";
                         }
                     }
                     calculatorDisplayTop.innerText = firstNumber + " " + chosenOperator + " " + secondNumber;
